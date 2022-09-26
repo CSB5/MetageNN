@@ -1,0 +1,25 @@
+{
+    "model_config": {
+        "settings": { 
+            "layer_dim": 3000,
+            "k_mer_dim": 2080,
+            "loss_weight": true,
+            "epochs": 500,
+            "gpus": 0,
+            "lr": 0.001,
+            "save_folder":"models"
+        }
+    },
+    "data_loader_train": {
+        "settings": {
+            "dataset_file_x": "../data/training.1x.6mer.npy",
+            "dataset_file_y": "../data/y_train_labels.csv",
+            "total_samples": 236212,
+            "batch_size": 1024,
+            "loader_type": "train",
+            "shuffle": true,
+            "drop_last": false,
+            "num_workers": 4,
+      }
+    }
+}
